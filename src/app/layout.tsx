@@ -18,13 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ThemeContext>
-        <body className={inter.className}>
+      <body className={inter.className}>
+        <ThemeContext>
           <Header />
           {children}
           <Footer />
-        </body>
-      </ThemeContext>
+        </ThemeContext>
+      </body>
     </html>
   )
 }
