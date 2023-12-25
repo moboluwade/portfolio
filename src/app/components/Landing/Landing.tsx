@@ -3,7 +3,7 @@ import React from 'react'
 
 const Landing = () => {
   return (
-    <div className='px-4 pt-28 md:px-12 flex flex-col justify-center'>
+    <div className='px-4 -pt-28 md:px-12 flex flex-col justify-center z-10'>
       <div className=' flex flex-col md:flex-row justify-center gap-12 md:px-8 lg:px-32'>
         <div className='flex flex-col justify-center'>
           <div className=' w-[20rem] h-[20rem] rounded-full bg-[#444] shadow-2xl opacity-80 flex flex-row justify-center content-center'>
