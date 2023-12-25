@@ -9,10 +9,10 @@ const Header = () => {
     return (
         <div className="w-full fixed overflow-hidden">
             <div className="relative w-full">
-                <div className=" flex flex-row px-4 pt-2 relative justify-between">
+                <div className=" flex flex-row px-4 md:px-12 pt-2 md:pt-4 relative justify-between">
                     <span className="brand-logo text-3xl text-blue-300">mob_codes</span>
-                    <div className="flex-row gap-4 w-fit content-center hidden md:flex">
-                        <button>
+                    <div className="flex-row gap-10 w-fit content-center hidden md:flex">
+                        <button className="">
                             <Link href={"/"}>Portfolio</Link>
                         </button>
                         <button>
