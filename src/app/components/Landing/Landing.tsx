@@ -3,12 +3,12 @@ import React from 'react'
 
 const Landing = () => {
   return (
-    <div className='px-4 pt-24 md:px-12 flex flex-col justify-center'>
+    <div className='px-4 pt-28 md:px-12 flex flex-col justify-center'>
       <div className=' flex flex-col md:flex-row justify-center gap-12 md:px-8 lg:px-32'>
         <div className='flex flex-col justify-center'>
-          <div className=' w-[18rem] h-[18rem] rounded-full bg-[#444] shadow-2xl opacity-80 flex flex-row justify-center content-center'>
+          <div className=' w-[20rem] h-[20rem] rounded-full bg-[#444] shadow-2xl opacity-80 flex flex-row justify-center content-center'>
             <Image className='rounded-full m-auto md:hidden' src="/profile.jpg" width={250} height={250} alt="mob's profile" />
-            <Image className='rounded-full m-auto hidden md:block' src="/profile.jpg" width={250} height={250} alt="mob's profile" />
+            <Image className='rounded-full m-auto hidden md:block' src="/profile.jpg" width={300} height={300} alt="mob's profile" />
           </div>
         </div>
         <div className='flex flex-col justify-center gap-6'>
