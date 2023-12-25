@@ -10,7 +10,7 @@ const Header = () => {
         <div className="w-full fixed overflow-hidden">
             <div className="relative w-full">
                 <div className=" flex flex-row px-4 pt-2 relative justify-between">
-                    <span>brand</span>
+                    <span className="brand-logo text-3xl text-blue-300">mob_codes</span>
                     <div className="flex-row gap-4 w-fit content-center hidden md:flex">
                         <button>
                             <Link href={"/"}>Portfolio</Link>
