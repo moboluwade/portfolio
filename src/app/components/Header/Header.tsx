@@ -5,7 +5,12 @@ import { useState } from "react"
 
 const Header = () => {
     const [showSidebar, setShowSidebar] = useState(false)
-
+    const goToPortfolio = ()=>{
+        const portfolioSection = document.getElementById("portfolio")
+        if(!!portfolioSection){
+            portfolioSection.scrollIntoView({behavior: 'smooth'})
+        }
+    }
     return (
         <div className="w-full fixed overflow-hidden z-20 bg-[rgba(34,34,34,0.8)]">
             <div className="relative w-full">
@@ -13,7 +18,7 @@ const Header = () => {
                     <span className="brand-logo text-3xl text-blue-300">mob_codes</span>
                     <div className="flex-row gap-10 w-fit content-center hidden md:flex">
                         <button className="">
-                            <Link href={"/"}>Portfolio</Link>
+                            <Link href="#portfolio" onClick={goToPortfolio} scroll={false}>Portfolio</Link>
                         </button>
                         <button>
                             <Link href={"/"}>Skills</Link>

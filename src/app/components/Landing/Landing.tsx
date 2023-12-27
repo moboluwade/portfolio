@@ -47,7 +47,7 @@ const Landing = () => {
             </div>
             <h4 className='font-normal md:text-xl text-white opacity-50 inline-block'>Web Developer</h4>
           </div>
-          <h2 className='md:text-5xl text-5xl font-bold'>Moboluwade Folarin</h2>
+          <h2 className='text-5xl font-bold'>Moboluwade Folarin</h2>
           <h4 className='md:text-lg xl:max-w-[40rem] max-w-[90%]'>Hi, I am a builder dedicated to bringing scalable and next-level web applications to life with music, with words, and with code.</h4>
           {/* <h3>Let`&apos;`s Build!</h3> */}
           <div className='flex flex-row gap-4 w-fit'>
