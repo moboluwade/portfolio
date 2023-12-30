@@ -29,7 +29,7 @@ const Landing = () => {
 }
 
   return (
-    <div className='px-4 pt-10 md:pt-28 md:px-12 flex flex-row justify-center z-10'>
+    <div className='px-4 pt-10 pb-32 md:pt-28 md:px-12 flex flex-row justify-center z-10 '>
       <div className=' flex flex-col md:flex-row justify-center gap-12 md:px-8 lg:px-32 w-full max-w-[85rem]'>
         <div className='flex flex-col justify-center content-center'>
           <div className='m-auto w-[20rem] h-[20rem] rounded-full bg-[#444] shadow-2xl opacity-80 flex flex-row justify-center content-center'>

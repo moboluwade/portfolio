@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 const Portfolio = () => {
     return (
-        <div id="portfolio" className='px-4 pt-32 md:px-12 flex flex-row justify-center content-center z-10 gap-10'>
+        <div id="portfolio" className='px-4 md:px-12 flex flex-row justify-center content-center z-10 gap-10'>
             <div className="flex flex-col content-center w-full pt-12 md:px-8 lg:px-32 max-w-[85rem] gap-12">
                 <h2 className='text-5xl font-bold w-full text-start'>Portfolio</h2>
                 <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 '>
