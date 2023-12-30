@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const Landing = () => {
   const [toggleTo, setToggleTo] = useState(1)
@@ -19,6 +20,13 @@ const Landing = () => {
   useEffect(() => {
     console.log(toggleTo)
   }, [toggleTo])
+
+  const goToPortfolio = ()=>{
+    const portfolioSection = document.getElementById("portfolio")
+    if(!!portfolioSection){
+        portfolioSection.scrollIntoView({behavior: 'smooth'})
+    }
+}
 
   return (
     <div className='px-4 pt-10 md:pt-28 md:px-12 flex flex-row justify-center z-10'>
@@ -51,9 +59,21 @@ const Landing = () => {
           <h4 className='md:text-lg xl:max-w-[40rem] max-w-[90%]'>Hi, I am a builder dedicated to bringing scalable and next-level web applications to life with music, with words, and with code.</h4>
           {/* <h3>Let`&apos;`s Build!</h3> */}
           <div className='flex flex-row gap-4 w-fit'>
-            <button className='border-[3px] border-blue-500 rounded-3xl px-6 py-2'>Portfolio</button>
-            <button className='border-[3px] border-white rounded-3xl px-6 py-2'>Contact Me</button>
+            <button className='border-[3px] border-blue-500 rounded-3xl px-6 py-2'>
+              ... more coming soon
+            </button>
+
+            {/* <Link href="https://wa.link/eyx709">
+              <button className='border-[3px] border-white rounded-3xl px-6 py-2'>Contact Me</button>
+            </Link> */}
+
           </div>
+          <h4 className='md:text-lg xl:max-w-[40rem] max-w-[90%] inline'>
+            <span className='pr-1'>Meanwhile check out my portfolio projects</span>
+            <Link href="#portfolio" onClick={goToPortfolio} scroll={false}><Image className='inline pt-2' src="/point-down.png" width={20} height={20} alt='' /></Link>
+            
+          </h4>
+
         </div>
       </div>
     </div>

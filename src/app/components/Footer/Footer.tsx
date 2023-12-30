@@ -1,7 +1,7 @@
 import LinkedinSVG from "@/app/_lib/linkedin-svg"
 import WhatsappSVG from "@/app/_lib/whatsapp-svg"
 import XSVG from "@/app/_lib/x-svg"
-
+import Link from "next/link"
 const Footer = () => {
     const date = new Date().getFullYear()
     return (
@@ -12,13 +12,13 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-row justify-start gap-8">
                     <div className="opacity-80 hover:opacity-100">
-                        <LinkedinSVG />
+                        <Link target="_blank" href="https://www.linkedin.com/in/boluwade-folarin/"><LinkedinSVG /></Link>
                     </div>
                     <div className="opacity-80 hover:opacity-100">
-                        <WhatsappSVG />
+                        <Link href="https://wa.link/eyx709"><WhatsappSVG /></Link>
                     </div>
                     <div className="opacity-80 hover:opacity-100">
-                        <XSVG />
+                        <Link target="_blank" href="https://twitter.com/moboluwade_"><XSVG /></Link>
                     </div>
                 </div>
 
