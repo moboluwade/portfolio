@@ -17,10 +17,6 @@ const Landing = () => {
     // make this happen only whileinview later
   }, [toggleTo])
 
-  useEffect(() => {
-    console.log(toggleTo)
-  }, [toggleTo])
-
   const goToPortfolio = ()=>{
     const portfolioSection = document.getElementById("portfolio")
     if(!!portfolioSection){
