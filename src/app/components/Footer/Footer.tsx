@@ -1,8 +1,9 @@
 import LinkedinSVG from "@/app/_lib/linkedin-svg"
-import WhatsappSVG from "@/app/_lib/whatsapp-svg"
+// import WhatsappSVG from "@/app/_lib/whatsapp-svg"
 import XSVG from "@/app/_lib/x-svg"
 import Link from "next/link"
 import Year from "./Year"
+import GithubSVG from "@/app/_lib/github-142-svgrepo-com"
 const Footer = () => {
     return (
         <div className="fixed bottom-0 px-4 md:px-12 border-t border-[#333] w-full bg-[#222]">
@@ -13,7 +14,7 @@ const Footer = () => {
                         <Link target="_blank" href="https://www.linkedin.com/in/boluwade-folarin/"><LinkedinSVG /></Link>
                     </div>
                     <div className="opacity-80 hover:opacity-100">
-                        <Link href="https://wa.link/eyx709"><WhatsappSVG /></Link>
+                        <Link href="https://www.github.com/moboluwade"><GithubSVG /></Link>
                     </div>
                     <div className="opacity-80 hover:opacity-100">
                         <Link target="_blank" href="https://twitter.com/moboluwade_"><XSVG /></Link>

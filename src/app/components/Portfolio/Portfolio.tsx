@@ -39,7 +39,7 @@ const Portfolio = () => {
                                     <Image className="inline pb-2" src="/white-external-link.png" width={12} height={12} alt="" />
                                 </h4>
                                 {/* add link icon here */}
-                                <p className="font-normal text-sm text-white opacity-50 inline-block">A scroll triggered animation web project with creatively dynamic marquee borders.</p>
+                                <p className="font-normal text-sm text-white opacity-50 inline-block">A scroll triggered animation web project with dynamic marquee borders.</p>
                                 <div>
                                     <p className="font-normal text-sm text-white opacity-50 inline-block">Built using:</p>
                                     <span className="flex flex-row gap-4 ">
@@ -69,14 +69,14 @@ const Portfolio = () => {
                                         src="/dev-league.png" width={300} height={300} layout="responsive" alt="dev league" />
                                 </motion.div>
                             </div>
-                            <div className="w-full pt-4 px-2 pb-2 flex flex-col gap-2">
+                            <div className="w-full pt-4 px-2 pb-2 flex flex-col gap-2 ">
                                 <h4 className="text-xl font-bold w-full">
                                     <span className=" pr-1">Dev League</span>
                                     <Image className="inline pb-2" src="/white-external-link.png" width={12} height={12} alt="" />
                                 </h4>
                                 {/* add link icon here */}
                                 <p className="font-normal text-sm text-white opacity-50 inline-block">The digital home for teams of tech enthusiasts</p>
-                                <div>
+                                <div className="">
                                     <p className="font-normal text-sm text-white opacity-50 inline-block">Built using:</p>
                                     <span className="flex flex-row gap-4 ">
                                         <span><Image className="inline-block" src="/react.png" width={20} height={20} alt="react" title="React.js" /></span>
