@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik+Doodle+Shadow&display=swap');
 
 body{
-  @apply dark:bg-[#222] bg-white text-black dark:text-white;
+  @apply dark:bg-darkBg bg-primaryBg text-dark dark:text-light;
 }
 
 .brand-logo{

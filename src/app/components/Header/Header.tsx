@@ -2,17 +2,19 @@
 
 import Link from "next/link"
 import { useState } from "react"
+import { ThemeSwitcher } from "./ThemeSwitcher"
 
 const Header = () => {
     const [showSidebar, setShowSidebar] = useState(false)
-    const goToPortfolio = ()=>{
+    const goToPortfolio = () => {
         const portfolioSection = document.getElementById("portfolio")
-        if(!!portfolioSection){
-            portfolioSection.scrollIntoView({behavior: 'smooth'})
+        if (!!portfolioSection) {
+            portfolioSection.scrollIntoView({ behavior: 'smooth' })
         }
     }
     return (
-        <div className="w-full fixed overflow-hidden z-20 bg-[rgba(34,34,34,0.8)]">
+        <div className="w-full fixed overflow-hidden z-20 dark:bg-darkBg">
+
             <div className="relative w-full">
                 <div className=" flex flex-row px-4 md:px-12 pt-2 md:pt-4 relative justify-between">
                     <span className="brand-logo text-3xl text-blue-300">mob_codes</span>
@@ -41,6 +43,9 @@ const Header = () => {
                         X
                     </div>
                 </div> */}
+            </div>
+            <div className="flex flex-row justify-center">
+                <ThemeSwitcher />
             </div>
         </div>
     )
