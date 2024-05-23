@@ -1,9 +1,9 @@
 "use client"
 import { ThemeProvider } from "next-themes"
 
-const ThemeContext = ({children}:{children: React.ReactNode}) => {
+const ThemeContext = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
       {children}
     </ThemeProvider>
   )
