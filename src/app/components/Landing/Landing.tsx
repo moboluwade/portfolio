@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
+
 const Landing = () => {
   const [toggleTo, setToggleTo] = useState(1)
   useEffect(() => {
@@ -27,6 +28,7 @@ const Landing = () => {
   return (
     <div className='px-4 pt-10 pb-32 md:pt-28 md:px-12 flex flex-row justify-center z-10 dark:bg-[rgba(34,34,34,0.8)] '>
       <div className=' flex flex-col md:flex-row justify-center gap-12 md:px-8 lg:px-32 w-full max-w-[85rem]'>
+
         <div className='flex flex-col justify-center content-center'>
           <div className='m-auto w-[20rem] h-[20rem] rounded-full bg-[rgb(68,68,68)] shadow-2xl opacity-80 flex flex-row justify-center content-center'>
             <Image className='rounded-full m-auto md:hidden' src="/profile.jpg" width={250} height={250} alt="mob's profile" />
