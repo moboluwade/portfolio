@@ -25,7 +25,7 @@ export default function RootLayout({
           {/* px-4 */}
           <Header />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </ThemeContext>
       </body>
     </html>
