@@ -17,22 +17,18 @@ export function ThemeSwitcher() {
 
     return (
         <div>
-            The current theme is: {theme}
             {theme === "light" ?
                 (
                     <button className="pl-2" onClick={() => setTheme('dark')}>
                         <Image width={30} height={30} src="/dark-mode.svg" alt="dark" />
-                        Dark Mode</button>
+                    </button>
                 )
                 :
                 (
                     <button className="pl-2" onClick={() => setTheme('light')}>
                         <Image width={30} height={30} src="/light-mode.svg" alt="light" />
-                        Light Mode</button>
+                    </button>
                 )}
-
-
-
         </div>
     )
 };
