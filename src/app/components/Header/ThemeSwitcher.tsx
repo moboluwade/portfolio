@@ -2,6 +2,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function ThemeSwitcher() {
@@ -17,8 +18,21 @@ export function ThemeSwitcher() {
     return (
         <div>
             The current theme is: {theme}
-            <button className="pl-2" onClick={() => setTheme('light')}>Light Mode</button>
-            <button className="pl-2" onClick={() => setTheme('dark')}>Dark Mode</button>
+            {theme === "light" ?
+                (
+                    <button className="pl-2" onClick={() => setTheme('dark')}>
+                        <Image width={30} height={30} src="/dark-mode.svg" alt="dark" />
+                        Dark Mode</button>
+                )
+                :
+                (
+                    <button className="pl-2" onClick={() => setTheme('light')}>
+                        <Image width={30} height={30} src="/light-mode.svg" alt="light" />
+                        Light Mode</button>
+                )}
+
+
+
         </div>
     )
 };
