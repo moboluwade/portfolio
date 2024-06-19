@@ -7,15 +7,24 @@ const Portfolio = () => {
         <div id="portfolio" className='px-4 md:px-12 flex flex-row justify-center content-center z-10 gap-10'>
             <div className="flex flex-col content-center w-full pt-12 md:px-8 lg:px-32 max-w-[85rem] gap-12">
                 {/* portfolio title */}
-                <h2 className='text-5xl font-bold w-full text-start'>Portfolio</h2>
+                <h2 className='text-5xl font-bold w-full text-start '>Portfolio</h2>
                 {/* cards grid */}
+                {/* <div className="flex flex-row gap-2 underline">
+                    <span>Nextjs</span>
+                    <span>Nextjs</span>
+                    <span>Nextjs</span>
+                    <span>Nextjs</span>
+                    <span>Nextjs</span>
+                    <span>Nextjs</span>
+                </div>
+                Nextjs */}
                 <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 '>
                     {/* Top Faves */}
                     <Link target="_blank" href="https://top-faves.netlify.app/">
                         <motion.div
                             initial={{ scale: 1 }}
                             whileHover={{ scale: 1.05, y: -15 }}
-                            className="flex flex-col justify-start w-[18rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
+                            className="flex flex-col justify-start w-[15rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
                             <div className="w-full overflow-hidden">
                                 {/* image or video */}
                                 <motion.div
@@ -28,7 +37,7 @@ const Portfolio = () => {
                                         loop
                                         muted
                                         playsInline
-                                        className="relative w-[18rem] h-full"
+                                        className="relative w-[15rem] h-full"
                                         src="https://utfs.io/f/9af60b16-3d90-45a6-b19f-90fac99dec23-o0qui6.com).mp4" width={300} height={300} />
                                 </motion.div>
                             </div>
@@ -57,7 +66,7 @@ const Portfolio = () => {
                         <motion.div
                             initial={{ scale: 1 }}
                             whileHover={{ scale: 1.05, y: -15 }}
-                            className="flex flex-col justify-start w-[18rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
+                            className="flex flex-col justify-start w-[15rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
                             <div className="w-full overflow-hidden">
                                 <motion.div
                                     initial={{ scale: 1, x: 0 }}
@@ -65,7 +74,7 @@ const Portfolio = () => {
                                     transition={{ duration: 0.8 }}
                                     className="w-full">
                                     <Image
-                                        className="relative w-[18rem] h-full"
+                                        className="relative w-[15rem] h-full"
                                         src="/dev-league.png" width={300} height={300} layout="responsive" alt="dev league" />
                                 </motion.div>
                             </div>
@@ -93,7 +102,7 @@ const Portfolio = () => {
                         <motion.div
                             initial={{ scale: 1 }}
                             whileHover={{ scale: 1.05, y: -15 }}
-                            className="flex flex-col justify-start w-[18rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
+                            className="flex flex-col justify-start w-[15rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
                             <div className="w-full overflow-hidden">
                                 <motion.div
                                     initial={{ scale: 1, x: 0 }}
@@ -101,7 +110,7 @@ const Portfolio = () => {
                                     transition={{ duration: 0.8 }}
                                     className="w-full">
                                     <Image
-                                        className="relative w-[18rem] h-full"
+                                        className="relative w-[15rem] h-full"
                                         src="/citipadi-waitlist.png" width={300} height={300} layout="responsive" alt="dev league" />
                                 </motion.div>
                             </div>
@@ -127,7 +136,7 @@ const Portfolio = () => {
                         <motion.div
                             initial={{ scale: 1 }}
                             whileHover={{ scale: 1.05, y: -15 }}
-                            className="flex flex-col justify-start w-[18rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
+                            className="flex flex-col justify-start w-[15rem] h-full mx-auto shadow-xl border border-[#919191] rounded-b-xl ">
                             <div className="w-full overflow-hidden">
                                 <motion.div
                                     initial={{ scale: 1, x: 0 }}
@@ -135,7 +144,7 @@ const Portfolio = () => {
                                     transition={{ duration: 0.8 }}
                                     className="w-full">
                                     <Image
-                                        className="relative w-[18rem] h-full"
+                                        className="relative w-[15rem] h-full"
                                         src="/homzy-demo.png" width={300} height={300} layout="responsive" alt="dev league" />
                                 </motion.div>
                             </div>

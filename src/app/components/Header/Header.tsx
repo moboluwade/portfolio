@@ -20,8 +20,7 @@ const Header = () => {
     return (
         <div
             onMouseLeave={() => { setOpenSocials(false), console.log(openSocials) }}
-            className="w-full fixed z-20 pt-2 lg:pt dark:bg-[#00000000] backdrop-blur-sm">
-
+            className="w-full fixed z-20 pt-3 lg:pt-0 dark:bg-[rgba(10 10 10 0.6] backdrop-blur-sm">
             <div className="relative w-full px-4 md:px-12 lg:px-24 md:pt-4">
                 <div className=" flex flex-row relative justify-between items-start">
                     {/* mob_codes logo for light and dark mode */}
