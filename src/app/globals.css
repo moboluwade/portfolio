@@ -3,8 +3,43 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik+Doodle+Shadow&display=swap');
 
+
+
+@layer keyframes {
+  /* Define the animation */
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+
+/* Apply the animation */
+.animation-slide-in {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.animation-slide-out {
+  animation: slideOut 0.5s ease-in-out forwards;
+}
+
 body{
   @apply dark:bg-darkBg bg-primaryBg text-dark dark:text-light;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 /* .brand-logo{
