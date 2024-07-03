@@ -4,20 +4,12 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 const Portfolio = () => {
     return (
-        <div id="portfolio" className='px-4 md:px-12 flex flex-row justify-center content-center z-10 gap-10'>
+        <div id="portfolio" className='px-4 md:px-8 flex flex-row justify-center content-center z-10 gap-10'>
             <div className="flex flex-col content-center w-full pt-12 md:px-8 lg:px-32 max-w-[85rem] gap-12">
                 {/* portfolio title */}
                 <h2 className='text-5xl font-bold w-full text-start '>Portfolio</h2>
                 {/* cards grid */}
-                {/* <div className="flex flex-row gap-2 underline">
-                    <span>Nextjs</span>
-                    <span>Nextjs</span>
-                    <span>Nextjs</span>
-                    <span>Nextjs</span>
-                    <span>Nextjs</span>
-                    <span>Nextjs</span>
-                </div>
-                Nextjs */}
+
                 <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 '>
                     {/* Top Faves */}
                     <Link target="_blank" href="https://top-faves.netlify.app/">
@@ -44,7 +36,7 @@ const Portfolio = () => {
 
                             <div className="w-full pt-4 px-2 pb-2 flex flex-col gap-2">
                                 <h4 className="text-xl font-bold w-full">
-                                    <span className=" pr-1">UI Marquee Scroll</span>
+                                    <span className=" pr-1">Chill Zone</span>
                                     <Image className="inline pb-2" src="/white-external-link.png" width={12} height={12} alt="" />
                                 </h4>
                                 {/* add link icon here */}
